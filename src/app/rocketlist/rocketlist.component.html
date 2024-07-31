@@ -1,0 +1,24 @@
+<div class="container">
+    <br />
+    <br />
+    <h1 class="text-center">Rockets</h1>
+    <table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th scope="col" [appSort]="rockets" data-order="desc" data-name="id">Rocket Id</th>
+            <th scope="col" [appSort]="rockets" data-order="desc" data-name="name">Rocket Name</th>
+            <th scope="col" [appSort]="rockets" data-order="desc" data-name="weightInPounds">Rocket Weight In Pounds</th>
+            <th>Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rocket of rockets">
+            <td>{{ rocket.id }}</td>
+            <td>{{ rocket.name }}</td>
+            <td>{{ rocket.weightInPounds }}</td>
+            <td><button (click)="handleUpdate(rocket.id)" class="btn btn-success">Update</button></td>
+            <td><button (click)="handleDelete(rocket.id)" class="btn btn-danger">Delete</button></td>
+        </tr>
+    </tbody>
+    </table>
+</div>

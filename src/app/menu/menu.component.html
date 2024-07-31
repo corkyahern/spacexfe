@@ -1,0 +1,31 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <ul class="navbar-nav">
+                <li>
+                    <a routerLink="/rocket-list" class="nav-link">Rockets</a>
+                </li>
+                <li>
+                    <a routerLink="/rocket" class="nav-link">Add Rocket</a>
+                </li>
+                <li>
+                    <a routerLink="/launch-list" class="nav-link">Launches</a>
+                </li>
+                <li>
+                    <a routerLink="/launch" class="nav-link">Add Launch</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li>
+                    <a routerLink="/register" class="nav-link">Register</a>
+                </li>
+                <li>
+                    <a routerLink="/login" class="nav-link">Login</a>
+                </li>
+                <li>
+                    <a routerLink="" class="nav-link" (click)="handleLogout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

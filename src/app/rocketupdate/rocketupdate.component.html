@@ -1,0 +1,39 @@
+<div class="container">
+    <br />
+    <br />
+    <div class="row">
+        <div class="card col-md-6 offset-md-3 offset-md-3"> 
+<h1 class="text-center">Update Rocket</h1>
+            <div class="card-body">
+<form (ngSubmit)="!rocketUpdateForm.invalid && handleUpdate()" #rocketUpdateForm="ngForm">
+    <div class="alert alert-warning" *ngIf="rocketUpdateForm.invalid">Enter Valid Fields</div>
+    <div class="form-group mb-3">
+        <label class="form-label">Rocket Name</label>
+        <input 
+            type="text"
+            placeholder="Rocket Name"
+            name="name"
+            [(ngModel)]="this.rocket.name"
+            class="form-control"
+            required="required"
+        />
+    </div>
+    <div class="form-group mb-3">
+        <label class="form-label">Weight in Pounds</label>
+        <input 
+            type="number"
+            placeholder="Rocket Weight in Pounds"
+            name="weightInPounds"
+            [(ngModel)]="this.rocket.weightInPounds"
+            class="form-control"
+            required="required"
+        />
+    </div>
+    <div class="form-group mb-3">
+        <button class="btn btn-primary">Update Rocket</button>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>

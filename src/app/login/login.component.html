@@ -1,0 +1,34 @@
+<div class="container">
+    <br />
+    <br />
+    <div class="row">
+        <div class="card col-md-6 offset-md-3 offset-md-3"> 
+<h1 class="text-center">Login!</h1>
+<div class="card-body">
+<form>
+    <div class="form-group mb-3">
+        <input 
+            type="text"
+            placeholder="Username"
+            name="username"
+            [(ngModel)]="login.username"
+            class="form-control"
+        />
+    </div>
+    <div class="form-group mb-3">
+        <input 
+            type="password"
+            placeholder="Password"
+            name="password"
+            [(ngModel)]="login.password"
+            class="form-control"
+        />
+    </div>
+    <div class="form-group mb-3">
+        <button (click)="handleSubmit()" class="btn btn-primary">Login</button>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>
